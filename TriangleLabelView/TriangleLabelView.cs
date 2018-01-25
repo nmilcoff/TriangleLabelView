@@ -50,6 +50,7 @@ namespace TriangleLabelView
             this.Init(context, attrs);
         }
 
+        #region customizable properties
         private float topPadding;
         public float TopPadding
         {
@@ -203,6 +204,7 @@ namespace TriangleLabelView
                 this.Relayout();
             }
         }
+        #endregion
 
         private void Init(Context context, IAttributeSet attrs)
         {

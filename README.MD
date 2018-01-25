@@ -24,6 +24,7 @@ A small widget that makes it super easy way to display a triangle label!
 ## <a name="features"> Features </a>
 
 - [x] Right triangle with four edges support (top-left, top-right, bottom-left, bottom-right)
+- [x] Visual changes in runtime
 - [x] Two labels support
 - [x] Highly customizable 
 - [x] Written in c#!
@@ -62,7 +63,21 @@ To see how the TriangleLabelView are added to your xml layouts, check the sample
 
 ## <a name="customising"> Customising </a>
 
-TBA
+In order to customise the TriangleLabelView appearance, you can play with the following attributes:
+
+| Property   | Type | xaml name |       Description      | 
+|----------|----|----|------------|
+|`TopPadding`|float|`labelTopPadding`| Padding between top and first label |
+|`CenterPadding`|float|`labelCenterPadding`| Padding between first and second label |
+|`BottomPadding`|float|`labelBottomPadding`| Padding between second label and bottom |
+|`PrimaryText`|float|`primaryText`| Text for the bottom label |
+|`SecondaryText`|float|`secondaryText`| Text for the top label |
+|`PrimaryTextColor`|Android.Graphics.Color|`primaryTextColor`| Text color for the bottom label |
+|`SecondaryTextColor`|Android.Graphics.Color|`secondaryTextColor`| Text color for the top label |
+|`PrimaryTextSize`|float|`primaryTextSize`| Text size for the bottom label |
+|`SecondaryTextSize`|float|`secondaryTextSize`| Text size for for the top label |
+|`TriangleBackgroundColor`|float|`backgroundColor`| Background color for the triangle view |
+|`Corner`|Corner (enum)|`corner`| Values: `leftTop`, `rightTop`, `leftBottom`, `rightBottom`. Sets the corner for the triangle view |
 
 ## <a name="license"> License </a>
 
