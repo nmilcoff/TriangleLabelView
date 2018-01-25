@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/s_image_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <jp.shts.android.library.TriangleLabelView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            local:backgroundColor="@color/teal_900"
+            local:corner="rightTop"
+            local:labelBottomPadding="5dp"
+            local:labelCenterPadding="0dp"
+            local:labelTopPadding="10dp"
+            local:primaryText="New"
+            local:primaryTextColor="@color/teal_500"
+            local:primaryTextSize="16sp"
+            local:secondaryText="01"
+            local:secondaryTextColor="@color/teal_100"
+            local:secondaryTextSize="11sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
