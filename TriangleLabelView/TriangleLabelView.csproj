@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -14,6 +15,17 @@
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>Xamarin.Android.TriangleLabelView</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Nicolas Milcoff</Authors>
+    <PackageLicenseUrl>https://github.com/nmilcoff/TriangleLabelView/blob/master/LICENSE</PackageLicenseUrl>
+    <Owners>Nicolas Milcoff</Owners>
+    <PackageProjectUrl>https://github.com/nmilcoff/TriangleLabelView</PackageProjectUrl>
+    <Summary>Xamarin.Android library that provides a super easy way to display a triangle label</Summary>
+    <PackageTags>android, droid, label, triangle, xamarin, xamarin.android</PackageTags>
+    <Title>Xamarin.Android.TriangleLabelView</Title>
+    <Description>C# port of https://github.com/shts/TriangleLabelView. Provides a super easy way to display a triangle label </Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,5 +65,9 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\values\attrs.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets')" />
 </Project>

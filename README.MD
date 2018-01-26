@@ -4,6 +4,7 @@ TriangleLabelView
 ====================
 A small widget that makes it super easy way to display a triangle label!
 
+[![NuGet](https://img.shields.io/nuget/v/Xamarin.Android.TriangleLabelView.svg?label=NuGet)](https://www.nuget.org/packages/Xamarin.Android.TriangleLabelView)
 [![Build Status](https://www.bitrise.io/app/fbf198dfa6849f1e/status.svg?token=tDd46KxzuM5vfLWp06yC1A&branch=master)](https://www.bitrise.io/app/fbf198dfa6849f1e/status.svg?token=tDd46KxzuM5vfLWp06yC1A&branch=master)
 
 
@@ -31,7 +32,13 @@ A small widget that makes it super easy way to display a triangle label!
 
 ## <a name="installation"> Installation </a>
 
-TBA
+#### Nuget
+
+> Install-Package Xamarin.Android.TriangleLabelView
+
+#### Manually
+
+If you prefer not to use either of the aforementioned dependency managers, you can integrate TriangleLabelView into your project manually.
 
 ## <a name="supported-versions"> Supported OS & SDK versions </a>
 
